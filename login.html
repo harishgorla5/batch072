@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HINTechnologies - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .login-form button {
+            padding: 10px;
+            background: #2575fc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .login-form button:hover {
+            background: #6a11cb;
+        }
+        .highlight {
+            color: #ffdd57;
+            font-weight: bold;
+        }
+        .devops-info {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .devops-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .devops-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .devops-info ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to <span class="highlight">HINTechnologies</span></h1>
+        <p>
+            We have been providing <span class="highlight">DevOps Training</span> for the past 6 years. 
+            Before that, we specialized in <span class="highlight">Middleware Trainings</span>. 
+            Additionally, we offer <span class="highlight">Python Training</span> at our institute.
+        </p>
+        <p>
+            So far, we have trained <span class="highlight">700+ students</span> and placed 
+            <span class="highlight">500+ students</span> in top companies. 
+            We started our journey in the year <span class="highlight">2014</span>.
+        </p>
+
+        <!-- DevOps Training Information -->
+        <div class="devops-info">
+            <h2>Our DevOps Training Focus</h2>
+            <p>
+                Our DevOps training program is designed to equip students with the latest tools and technologies used in the industry. 
+                We primarily focus on:
+            </p>
+            <ul>
+                <li><span class="highlight">Docker</span> - Containerization and orchestration for modern applications.</li>
+                <li><span class="highlight">Kubernetes</span> - Managing containerized applications at scale.</li>
+                <li>Continuous Integration and Continuous Deployment (CI/CD) pipelines.</li>
+                <li>Infrastructure as Code (IaC) using tools like Terraform and Ansible.</li>
+                <li>Monitoring and logging with tools like Prometheus, Grafana, and ELK Stack.</li>
+            </ul>
+            <p>
+                Our hands-on training approach ensures that students gain practical experience and are job-ready.
+            </p>
+        </div>
+
+        <!-- Login Form -->
+        <form class="login-form" action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
